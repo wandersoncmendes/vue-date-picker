@@ -200,13 +200,19 @@ export default {
     calendarAttr: Object,
     calendarStyle: [Object, Array],
     calendarClass: [Object, Array],
-    disabledDate: { type: Function, default: () => false }
+    disabledDate: { type: Function, default: () => false },
+    days: {
+        type: Array,
+        default: function () { return ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'] }
+    },
+    months: {
+        type: Array,
+        default: function () { return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] }
+    },
   },
   data () {
     return {
       show: false,
-      days: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-      months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       date: [],
       now: new Date(),
       pickedValue: ''
