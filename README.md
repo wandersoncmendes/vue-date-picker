@@ -56,6 +56,8 @@ export default {
 | calendar-style                | Array \| Object    | --          | Binding inline style for calendar        |
 | calendar-attr                 | Object             | --          | Binding attribute for calendar           |
 | disabled-date                 | Function           | --          | A function that determines if you want to disable dates |
+| days                          | Array              | ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'] | Binding days for calendar |
+| months                        | Array              | ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] | Binding months for calendar |
 
 ## License
 
